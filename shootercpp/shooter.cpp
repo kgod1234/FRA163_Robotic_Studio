@@ -75,5 +75,5 @@ double shooter::getlastheight(){
 }
 
 double shooter::findK(const double init_v){
-    return  mass * ((init_v * init_v + 9.81 * (last_height - init_height)) / (max_delta * max_delta));
+    return  mass * ((init_v * init_v + 9.81 * 2 * (last_height - init_height)) / (max_delta * max_delta));
 }

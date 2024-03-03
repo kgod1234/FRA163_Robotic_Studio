@@ -3,12 +3,12 @@
 #include "shooter.h"
 
 int main(){
-    double init_angle = 57.89;
+    double init_angle = 57;
     double target = 0.755;
     double delta = 0.01465;
     double max_delta = 0.1;
-    double mass = 0.124;
-    // shooter shooter(0.470, 36.89, 0.01465, 0.11465);
+    double mass = 0.200;
+    // shooter shooter(0.470, 57.89, 0.01465, 0.11465,mass);
     // shooter.getShooterDimension();
     // shooter.getShootingDimension();
     std::cout << std::setprecision(3);
@@ -32,7 +32,7 @@ int main(){
         }
         init_angle = init_angle - 2;
     }
-    init_angle = 57.89;
+    init_angle = 57;
     std::cout << "|-----------------------------------------------------------------------|" << '\n';
     std::cout << "Biggest initial velocity" << '\n';
     std::cout << "|-----------------------------------------------------------------------|" << '\n';
